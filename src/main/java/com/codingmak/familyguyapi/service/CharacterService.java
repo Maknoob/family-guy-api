@@ -30,7 +30,7 @@ public class CharacterService {
 
 
 
-	public Optional<CharacterModel> getName(Integer id) {
+	public Optional<CharacterModel> getCharacter(Integer id) {
 		Optional<CharacterModel> optional = Optional.empty();
 		for (CharacterModel characterModel : charList) {
 			

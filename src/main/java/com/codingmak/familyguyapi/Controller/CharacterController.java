@@ -20,8 +20,8 @@ public class CharacterController {
 	}
 	
 	@GetMapping ("/characters")
-	public CharacterModel getName(@RequestParam Integer id) {
-		Optional<CharacterModel> character = characterService.getName(id);
+	public CharacterModel getCharacter(@RequestParam Integer id) {
+		Optional<CharacterModel> character = characterService.getCharacter(id);
 		if(character.isPresent()) {
 			return (CharacterModel) character.get();
 		}
