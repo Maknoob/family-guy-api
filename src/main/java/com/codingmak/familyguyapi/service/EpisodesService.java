@@ -27,7 +27,12 @@ public class EpisodesService {
 		episodeList.addAll(Arrays.asList(peter,lois,chris,stewie,meg));
 	}
 	
-	public Optional<EpisodesModel> getEpisode(Integer id) {
+	public List<EpisodesModel> getAllEpisodes() {
+	
+		return episodeList;
+	}
+	
+	public Optional<EpisodesModel> getEpisodeById(Integer id) {
 		Optional<EpisodesModel> optional = Optional.empty();
 		for (EpisodesModel episodesModel : episodeList) {
 			

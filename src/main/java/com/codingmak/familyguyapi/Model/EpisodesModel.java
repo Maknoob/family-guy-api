@@ -18,6 +18,7 @@ public class EpisodesModel {
 		this.description = description;
 	}
 	
+	
 	public int getId() {
 		return id;
 	}
