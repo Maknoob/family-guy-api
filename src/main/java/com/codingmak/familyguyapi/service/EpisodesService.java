@@ -7,7 +7,6 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.codingmak.familyguyapi.Model.CharacterModel;
 import com.codingmak.familyguyapi.Model.EpisodesModel;
 
 
