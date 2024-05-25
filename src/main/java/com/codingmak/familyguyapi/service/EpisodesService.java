@@ -7,6 +7,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.codingmak.familyguyapi.Exceptions.EpisodeNotFound;
 import com.codingmak.familyguyapi.Model.EpisodesModel;
 
 
@@ -32,15 +33,12 @@ public class EpisodesService {
 		return episodeList;
 	}
 	
-	public Optional<EpisodesModel> getEpisodeById(Integer id) {
-		Optional<EpisodesModel> optional = Optional.empty();
-		for (EpisodesModel episodesModel : episodeList) {
-			
-			if (id == episodesModel.getId()) {
-				optional = Optional.of(episodesModel);
-				return optional;
-			}
-		}
-		return optional;
-	}
+    public Optional<EpisodesModel> getEpisodeById(Integer id) {
+        return episodeList.stream()
+                .filter(episode -> id.equals(episode.getId()))
+                .findFirst()
+                .or(() -> {
+                    throw new EpisodeNotFound("Episode not found with ID: " + id);
+                });
+    }
 }
