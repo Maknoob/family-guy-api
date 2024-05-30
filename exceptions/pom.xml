@@ -6,11 +6,4 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>exceptions</artifactId>
-  
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
 </project>
