@@ -9,11 +9,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.codingmak.familyguyapi.Exceptions.CharacterNotFound;
-import com.codingmak.familyguyapi.Exceptions.EpisodeNotFound;
 import com.codingmak.familyguyapi.Model.CharacterModel;
 import com.codingmak.familyguyapi.service.CharacterService;
 
