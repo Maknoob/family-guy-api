@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 
 import com.codingmak.familyguyapi.Exceptions.CharacterNotFound;
-import com.codingmak.familyguyapi.Exceptions.EpisodeNotFound;
 import com.codingmak.familyguyapi.Model.CharacterModel;
 
 @Service
@@ -38,7 +37,7 @@ public class CharacterService {
                 .filter(character -> id.equals(character.getId()))
                 .findFirst()
                 .or(() -> {
-                    throw new EpisodeNotFound("Character not found with ID: " + id);
+                    throw new CharacterNotFound("Character not found with ID: " + id);
                 });
     
 	}
