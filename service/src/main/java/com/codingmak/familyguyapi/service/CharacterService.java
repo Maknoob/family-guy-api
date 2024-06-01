@@ -5,11 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import com.codingmak.familyguyapi.exceptions.CharacterNotFound;
+import com.codingmak.familyguyapi.model.CharacterModel;
 
 import org.springframework.stereotype.Service;
 
-import com.codingmak.familyguyapi.Exceptions.CharacterNotFound;
-import com.codingmak.familyguyapi.Model.CharacterModel;
+
+
 
 @Service
 public class CharacterService {
