@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.codingmak.familyguyapi.exceptions.EpisodeNotFound;
 import com.codingmak.familyguyapi.model.Episodes;
+import com.codingmak.familyguyapi.exceptions.EpisodeNotFound;
 import com.codingmak.familyguyapi.service.EpisodesService;
 
 @RestController

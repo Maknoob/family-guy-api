@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import com.codingmak.familyguyapi.exceptions.EpisodeNotFound;
-import com.codingmak.familyguyapi.model.Episodes;
 
 import org.springframework.stereotype.Service;
+
+import com.codingmak.familyguyapi.model.Episodes;
+import com.codingmak.familyguyapi.exceptions.EpisodeNotFound;
 
 
 

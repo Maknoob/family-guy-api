@@ -86,10 +86,10 @@
     </build>
     
     <modules>
-    	<module>application</module>
     	<module>model</module>
     	<module>exceptions</module>
     	<module>service</module>
     	<module>controller</module>
+    	<module>application</module>
     </modules>
 </project>
